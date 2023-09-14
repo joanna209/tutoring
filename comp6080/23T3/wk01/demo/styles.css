@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F1F6;
+  justify-content: center;
+  align-items: center;
+  font-family: 'SF Pro Display', sans-serif;
+}
+
+#section {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.heading {
+  color: #080809;
+}
+
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.cards {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+}
+
+.headphones {
+  color: #76A9EE;
+}
+
+.heart-rate {
+  color: #FA2A4E;
+}
+
+.sleep {
+  color: #A4F0EE;
+}
+
+.steps {
+  color: #E17E6B;
+}
+
+.time {
+  color: #C5C5C5;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-metric {
+  color: #080809;
+  font-size: 40pt;
+  margin: 0;
+  padding: 0;
+}
+
+.card-measurement {
+  color: #C5C5C5;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .cards-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
