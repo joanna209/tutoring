@@ -123,7 +123,14 @@ https://www.w3schools.com/jsref/dom_obj_event.asp
 
 ## Demo
 
-- Let's walkthrough how to make an application form with HTML/CSS/JS
+- Let's walkthrough how to make an Starbucks order form with HTML/CSS/JS
+
+## What we want in our form
+
+- Name
+- Location
+- Order
+
 
 ---
 
