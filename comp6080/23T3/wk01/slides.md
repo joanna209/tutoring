@@ -207,10 +207,10 @@ NB: All tutorial content + resources will be available at https://github.com/joa
 .wrapper {
     /* apply grid layout to child elements */
     display: grid;
-    /* create 3 columns with a gap of 10px */
-    grid-template-columns: repeat(3, 1fr);
+    /* create 3 columns with a minimum size of 10px and can expand based on content */
+    grid-template-columns: repeat(3, minmax(10px, 1fr));
     gap: 10px;
-    /* create rows with minimum of 100px */
+    /* create rows with a minimum size of 100px and can expand based on content */
     grid-auto-rows: minmax(100px, auto);
 }
 ```
