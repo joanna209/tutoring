@@ -125,12 +125,28 @@ https://www.w3schools.com/jsref/dom_obj_event.asp
 
 - Let's walkthrough how to make an Starbucks order form with HTML/CSS/JS
 
-## What we want in our form
+---
 
-- Name
-- Location
-- Order
+## Requirements
 
+Fields required:
+- Name of the peron ordering
+- Location of where the person will be picking up the order from
+- Order (i.e. coffee order)
+
+Output to throw error if:
+- Name is less than 3 characters or more than 50 characters
+- Order is less than 3 characters or more than 50 characters
+
+---
+
+## Requirements (cont)
+
+Upon successful submission, output should be parsed as 
+
+```js
+[name] has submitted an order at [curr date] for [order] for picku p at [location]
+```
 
 ---
 
