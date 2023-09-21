@@ -81,7 +81,7 @@ DOM: a data representation of the objects that comprise the structure and conten
 ---
 
 ```html
-<button onclick="changeColor(this);">Click me</button>
+<button onclick="changeColor(this);" id="button">Click me</button>
 
 <script>
 function changeColor(button) {
@@ -95,8 +95,8 @@ function changeColor(button) {
 ## We can one up that...
 
 ```js
-// document.[instance method[event, fn]]
-const button = document.getElementById("click", changeBackground);
+// document.[instance method("id")]
+const button = document.getElementById("button");
 
 function changeBackground() {
   // dereferencing background colour of the page
