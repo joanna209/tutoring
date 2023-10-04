@@ -14,7 +14,7 @@ Joanna He
 ## Agenda
 
 - Week 2 overview
-- JavaScript
+- DOM manipulation
 - Demo
 
 --- 
