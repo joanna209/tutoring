@@ -61,7 +61,7 @@ Four main methods to communicate with a server:
 function getUsers() {
   return [
     { username: 'kirby', email: 'kirby@test.com' },
-    { username: 'yoshi', email: 'yoshi@test.com' },
+    { username: 'charmander', email: 'charmander@test.com' },
   ];
 }
 
@@ -85,8 +85,8 @@ function getUsers() {
   // delay 1 second (1000ms)
   setTimeout(() => {
     users = [
-      { username: 'kirby', email: 'kirby@test.com' },
-      { username: 'yoshi', email: 'yoshi@test.com' },
+      { username: 'bulbasaur', email: 'bulbasaur@test.com' },
+      { username: 'charmander', email: 'charmander@test.com' },
     ];
   }, 1000);
 
@@ -99,7 +99,7 @@ function findUser(username) {
   return user;
 }
 
-console.log(findUser('kirby'));
+console.log(findUser('bulbasaur'));
 ```
 
 ---
@@ -110,20 +110,20 @@ console.log(findUser('kirby'));
 function getUsers(callback) {
   setTimeout(() => {
     callback([
-      { username: 'kirby', email: 'kirby@test.com' },
-      { username: 'yoshi', email: 'yoshi@test.com' },
+      { username: 'baulbasaur', email: 'baulbasaur@test.com' },
+      { username: 'charmander', email: 'charmander@test.com' },
     ]);
   }, 1000);
 }
 
 function findUser(username, callback) {
   getUsers((users) => {
-    const user = users.find((user) => user.username === username);
+    const user = users.find((user) => user.username == username);
     callback(user);
   });
 }
 
-findUser('kirby', console.log);
+findUser('baulbasaur', console.log);
 ```
 
 ---
@@ -135,15 +135,15 @@ function getUsers() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve([
-        { username: 'kirby', email: 'kirby@test.com' },
-        { username: 'yoshi', email: 'yoshi@test.com' },
+        { username: 'bulbasaur', email: 'bulbasaur@test.com' },
+        { username: 'charmander', email: 'charmander@test.com' },
       ]);
     }, 1000);
   });
 }
 
 getUsers().then((users) => {
-  console.log(users.find((user) => user.username === 'kirby'));
+  console.log(users.find((user) => user.username === 'bulbasaur'));
 }).catch((error) => {
   console.error('Error:', error);
 });
