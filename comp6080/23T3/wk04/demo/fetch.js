@@ -44,8 +44,9 @@
 // take 3: fetching with callbacks
 // a callback is a function that you pass into another function as an argument for executing later
 // works but is cursed because complexity will grow with the number of nested calls we make to the network and adds unnecessary complexity with the callback arguments
+// dw how this works under the hood tbh
 
-// // accepts a callback function as an argument and invokes it with the users array inside the setTimeout() function
+// accepts a callback function as an argument and invokes it with the users array inside the setTimeout() function
 // function getUsers(callback) {
 //   setTimeout(() => {
 //     callback([
@@ -58,6 +59,22 @@
 // accepts a callback function that processes the matched user
 // function findUser(username, callback) {
 //   getUsers((users) => {
+//     getUsers((users) => {
+//       getUsers((users) => {
+//         const user = users.find((user) => user.username === username);
+//         callback(user);
+//         getUsers((users) => {
+//           const user = users.find((user) => user.username === username);
+//           callback(user);
+//           getUsers((users) => {
+//             const user = users.find((user) => user.username === username);
+//             callback(user);
+//           })
+//         })
+//       })
+//       const user = users.find((user) => user.username === username);
+//       callback(user);
+//     })
 //     const user = users.find((user) => user.username === username);
 //     callback(user);
 //   });
@@ -67,13 +84,12 @@
 
 // take 4: fetching with promises
 // so much nicer - code is cleaner without needing to pass callback arguments into fns
-
 // function getUsers() {
 //   return new Promise((resolve, reject) => {
 //     setTimeout(() => {
 //       const isError = true;
 //       if (isError) {
-//         reject('failed to the user list');
+//         reject('failed to fetch the user list');
 //       } else {
 //         resolve([
 //           { username: 'bulbasaur', email: 'bulbasaur@test.com' },
