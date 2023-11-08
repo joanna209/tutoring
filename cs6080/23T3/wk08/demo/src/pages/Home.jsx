@@ -28,7 +28,7 @@ const Home = () => {
         placeholder="name"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
-        onKeyUp={(e) => e.key === 'Enter' && onSubmit(e)}
+        onKeyUp={(e) => e.key === "Enter" && onSubmit(e)}
       />
       <FormLabel>Password</FormLabel>
       <Input placeholder="password" />

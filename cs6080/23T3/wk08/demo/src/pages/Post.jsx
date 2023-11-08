@@ -10,8 +10,8 @@ const Post = () => {
 
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
-      .then(resp => resp.json())
-      .then(data => {
+      .then((resp) => resp.json())
+      .then((data) => {
         console.log(data);
         setTitle(data.title);
       });
@@ -24,6 +24,6 @@ const Post = () => {
       <Button onClick={() => navigate("/dashboard")}>Back to dashboard</Button>
     </div>
   );
-}
+};
 
 export default Post;
