@@ -4,11 +4,11 @@ const FRONTEND_URL = "http://localhost:3000";
 beforeEach(() => window.cy.visit(`${FRONTEND_URL}`))
 
 describe('user happy path', () => {
-  it('should visit the home page successfully', () => {
+  it('should visit home pages successfully', () => {
     window.cy.url().should('deep.equal', `${FRONTEND_URL}/`)
   })
 
-  it('should navigate to the dashboard page succesfully', () => {
+  it('should visit dashboard succesfully', () => {
     window.cy.get('input[name=email]')
       .focus()
       .type('a@a.com')

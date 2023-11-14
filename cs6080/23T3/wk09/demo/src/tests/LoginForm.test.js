@@ -3,7 +3,7 @@
 // - https://github.com/testing-library/jest-dom
 
 import LoginForm from '../components/LoginForm';
-import { cleanup, screen, fireEvent, render } from '../test-utils';
+import { screen, fireEvent, render } from '../test-utils';
 
 // note: mantine depends on browser apis such as window matchMedia in order to function 
 // https://stackoverflow.com/questions/39830580/jest-test-fails-typeerror-window-matchmedia-is-not-a-function

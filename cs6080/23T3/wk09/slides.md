@@ -5,7 +5,7 @@ theme: uncover
 paginate: true
 ---
 
-# COMP6080 WK8 Tutorial 🗺️
+# COMP6080 WK9 Tutorial 🗺️
 
 Joanna He
 
@@ -30,6 +30,15 @@ No late submissions are accepted
 ---
 
 ## Any questions?
+
+---
+
+## Last week we covered...
+
+- More react hooks (`useContext`)
+- Demo
+- Routing
+- Component libraries
 
 ---
 
@@ -79,8 +88,8 @@ https://code.visualstudio.com/docs/editor/userdefinedsnippets
 
 ## Testing strategies
 
-- Unit testing: validate behaviour of individual functions, methods or units of code (covered in COMP1531)
-- Integration testing: testing multiple units of code together (e.g. component testing) 
+- Unit testing: validate behaviour of individual functions, methods or units of code (e.g. component testing) 
+- Integration testing: testing multiple units of code together
 - End to end testing: running app in simulated environment to emulate actual user behaviour (e.g. happy paths)
 
 ---
