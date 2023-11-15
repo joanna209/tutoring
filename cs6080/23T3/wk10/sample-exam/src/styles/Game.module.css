@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    max-width: 70%;
+    text-align: center;
+}
+
+.heading {
+    margin-top: 200px;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.player {
+    max-width: 40%;
+}
+
+.computer {
+    max-width: 40%;
+}
+
+.button {
+    margin: 0 auto;
+    margin-top: 50px;
+}

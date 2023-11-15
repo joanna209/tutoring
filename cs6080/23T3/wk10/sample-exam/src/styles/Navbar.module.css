@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    background: #eeeeee;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .mobile {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        margin-top: 30px;
+        margin-right: 15px;
+    }
+
+    .link {
+        display: none;
+    }
+}
