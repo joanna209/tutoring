@@ -2,6 +2,4 @@
 
 The home for all my tutorial resources (including code, notes and solutions). 
 
-| Course    | Term            | Tutorial slot(s)        |
-|-----------|-----------------|--------------------------|
-| COMP6080  | Term 3, 2023    | Thurs 11:00 - 12:00 |
+For 24T1, go to [W12A](/cs6080/24T1/w12a) or [W15A](/cs6080/24T1/w15a)
