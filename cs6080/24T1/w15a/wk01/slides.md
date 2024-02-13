@@ -14,6 +14,7 @@ Joanna He
 
 - Introductions
 - Housekeeping
+- Assignment 1 walkthrough
 - HTML/CSS
 - Demo
 
@@ -47,6 +48,14 @@ Have a question and/or stuck on something? Here's where you can ask for help:
 - Help sessions
 - Course email: cs6080@cse.unsw.edu.au
 - Me: joanna.he@student.unsw.edu.au
+
+---
+
+![Meme](assets/meme.png)
+
+---
+
+## Any questions?
 
 ---
 ## Now onto frontend programming....
