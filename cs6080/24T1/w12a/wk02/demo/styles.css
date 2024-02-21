@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #F2F1F6;
+  font-family: Arial;
+}
+
+#section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#headphone-text {
+  color: #ADCCF4;
+  font-weight: 700;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#num-steps {
+  font-size: 48pt;
+  font-weight: 700;
+  margin-right: 30px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
