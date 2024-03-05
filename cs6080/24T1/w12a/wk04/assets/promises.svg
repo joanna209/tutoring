@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="250" viewBox="-0.5 -0.5 500 250">
+  <style><![CDATA[.B{pointer-events:all}.C{font-family:Helvetica}.D{font-size:16px}.E{text-anchor:middle}.F{fill:#b0b0b0}.G{pointer-events:stroke}]]></style>
+  <g stroke="#b0b0b0" stroke-miterlimit="10">
+    <path d="M82 95V45h145l53.69-.63" fill="none" class="G"/>
+    <path d="M330.64 44.35l-9.94 5.15 2.44-5.02-2.57-4.98z" class="B F"/>
+    <path d="M82 155v40h144.75l54.76-.65" fill="none" class="G"/>
+    <path d="M330.64 199.35l-9.94 5.15 2.44-5.03-2.57-4.97z" class="B F"/>
+  </g>
+  <path fill="#fff2cc" d="M0 95h209v45H0z" class="B"/>
+  <text x="104.5" y="120.5" fill="#000" class="C D E">Pending</text>
+  <path fill="#d5e8d4" d="M333 31h216v45H333z" class="B"/>
+  <text x="441.5" y="58.5" fill="#000" class="C D E">Fulfilled: value</text>
+  <path fill="#f8cecc" d="M333 175h218v45H333z" class="B"/>
+  <text x="441.5" y="202.5" fill="#000" class="C D E">Rejected: error</text>
+  <rect x="280" width="218" height="248" rx="32" fill="none" stroke="#b0b0b0" stroke-dasharray="4 4" class="B"/>
+  <text x="441.5" y="237.5" class="C D E F">Resolved</text>
+  <text x="156.5" y="30.5" class="C D E F">resolve()</text>
+  <text x="152.5" y="211.5" class="C D E F">reject()</text>
+</svg>
