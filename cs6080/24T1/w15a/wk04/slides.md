@@ -223,7 +223,7 @@ The second call to resolve is ignored, because only the first call of reject/res
 
 ## Demo
 
-- Let's fetch the first 20 pokemon and append the pokemon names as list tags to the DOM!
+- Let's recursively fetch the first 20 pokemon (and their details) and append the pokemon names as list tags to the DOM!
 
 ---
 
