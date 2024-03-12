@@ -14,7 +14,7 @@ Joanna He
 ## Agenda
 
 - Week 4 overview
-- Assignment 3
+- Assignment 3 overview
 - Promises (but there's more 👀)
 - HTML templates
 - Demo
@@ -104,7 +104,68 @@ const doSomething = async () => {
 
 ---
 
-## 
+## Previously...
+
+---
+
+## HTML templates????? 😮
+
+- HTML elements where 🫵 YOU 🫵 can define its behaviour
+- Usually elements are an extension of the set of elements available in the browser
+
+---
+
+## ⚠️ WARNING: do not use the shadow dom
+
+(this will stop all css from cascading)
+
+https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM
+
+---
+
+![alt text](assets/image.png)
+
+---
+
+## Creating a custom element
+
+```js
+class MyCustomElement extends HTMLElement {
+  static observedAttributes = ["color", "size"];
+
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    console.log("Custom element added to page.");
+  }
+
+  disconnectedCallback() {
+    console.log("Custom element removed from page.");
+  }
+
+  adoptedCallback() {
+    console.log("Custom element moved to new page.");
+  }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    console.log(`Attribute ${name} has changed.`);
+  }
+}
+
+customElements.define("my-custom-element", MyCustomElement);
+```
+
+---
+
+## Attaching custom elements to HTML
+
+- Use custom name just like a in-built HTML element
+
+```html
+<my-custom-element></my-custom-element>
+```
 
 ---
 
