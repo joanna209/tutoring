@@ -177,6 +177,12 @@ EXTENSION: refactor to use `async` / `await`
 
 ---
 
+## Resources
+
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements)
+- [JavaScript.info](https://javascript.info/custom-elements)
+
+---
 
 ## Tutorial code can be found at
 
