@@ -111,9 +111,7 @@ const doSomething = async () => {
 
 ---
 
-## Demo
 
-Let's refactor our pokemon fetcher to use `async` / `await` and our favourite CSS library 🔥
 
 ---
 
