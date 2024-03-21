@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Pokemon</h1>
+    <main id="main">
+      <!-- This is where the custom web component is actually being used. -->
+      <fetch-button />
+    </main>
+    <!-- Not rendered on the DOM -->
+    <template id="fetch-button">
+        <button class="fetch-btn"></button>
+    </template>
+    <template id="poke-list">
+        <li class="poke-li"></button>
+    </template>
+    <script src="index.js"></script>
+  </body>
+</html>
