@@ -1,0 +1,22 @@
+body {
+  font-family: 'Arial';
+}
+
+form {
+  width: 400px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.submit {
+  background: red;
+  color: orange;
+  padding: 0.375rem 0.75rem;
+  border-radius: 4px;
+  text-align: center;
+}

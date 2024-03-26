@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial'
+}
+
+p {
+  color: purple;
+  margin: 0.5em 0;
+}
+
+li {
+  cursor: pointer;
+}
