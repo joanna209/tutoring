@@ -13,9 +13,9 @@ const handleSelection = (e) => {
 
 listItems.forEach((item) => {
   item.addEventListener('mouseup', handleSelection);
-  item.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter') {
-      handleSelection(event);
+  item.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      handleSelection(e);
     }
-  }) 
+  })
 })
