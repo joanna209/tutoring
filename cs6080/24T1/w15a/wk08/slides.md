@@ -5,7 +5,7 @@ theme: uncover
 paginate: true
 ---
 
-# COMP6080 WK7 Tutorial 🗺️
+# COMP6080 WK8 Tutorial 🗺️
 
 Joanna He
 
@@ -13,7 +13,7 @@ Joanna He
 
 ## Agenda
 
-- Week 5 overview
+- Week 7 overview
 - React
 - JSX
 - Components
