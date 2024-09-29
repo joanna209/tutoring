@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"></link>
+</head>
+<body>
+    <h1>Starbucks Order Form</h1>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+        <label for="location">Ordering from</label>
+        <select name="location" id="location" required>
+            <option value="Starbucks Haymarket">Starbucks Haymarket</option>
+            <option value="Starbucks QVB">Starbucks QVB</option>
+            <option value="Starbucks The Rocks">Starbucks The Rocks</option>
+        </select>
+        <label for="order" required>Order</label>
+        <input type="text" name="order" id="order" required/>
+        <button id="submit-btn">Submit order</button>
+        <button id="reset-btn">Reset</button>
+    </form>
+    <textarea id="output" rows="5" cols="20" name="output"></textarea>
+    <script src="script.js"></script>
+</body>
+</html>
