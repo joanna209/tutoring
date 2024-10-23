@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+</style>
+
+<body>
+    <!-- This is the most ideal way to label an input -->
+    <div>
+        <label for="name">Name</label>
+        <input id="name" />
+    </div>
+
+    <!-- This is also acceptable, but has some issues with custom component inputs, say if the custom input has text, it'll be treated as a label -->
+    <div>
+        <label>
+            Name
+            <input />
+        </label>
+    </div>
+
+    <!-- This should not be used this way as placeholder text has poor usability w/ screen readers -->
+    <input placeholder="name" />
+
+    <!-- The inverse of the first method, useful for two or more elements that should have the same label -->
+    <div>
+        <label id="name">Name</label>
+        <input aria-labelledby="name" />
+    </div>
+
+    <!-- To use only for input with invisible fields -->
+    <input aria-label="Name" />
+
+    <!-- Note: for fields that require more context (e.g. if the field needs to be in a certain format), add a succinct description -->
+    <div>
+        <label for="name">Name</label>
+        <input id="name" aria-describedby="nameDesc" />
+        <p id="nameDesc" role="alert">Please use your full name as this will be printed on the invitation</p>
+    </div>
+</body>
+
+</html>

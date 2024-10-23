@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aria attributes</title>
+</head>
+<body>
+    <button
+        aria-controls="listBoxElem"
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        id="dropdownButton"
+    >
+        Travel destination
+    </button>
+    <ul role="listbox" id="listBoxElem">
+        <li role="option" aria-selected="false">Canberra</li>
+        <li role="option" aria-selected="false">Sydney</li>
+        <li role="option" aria-selected="false">Melbourne</li>
+    </ul>
+</body>
+<script src="script.js"></script>
+</html>
