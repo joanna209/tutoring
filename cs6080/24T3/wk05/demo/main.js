@@ -21,14 +21,14 @@ const displayPokemon = (pokemonDetails) => {
   wrapper.style.display = "flex";
   wrapper.style.flexDirection = "column";
   wrapper.style.paddingTop = "30px";
-  document.body.appendChild(wrapper);
+  document.body.append(wrapper);
 
   for (const pokemon of pokemonDetails) {
     const element = document.createElement("li");
     element.textContent = pokemon.name + ", weight: " + pokemon.weight;
     element.style.fontStyle = "italic";
     element.style.fontFamily = "Arial";
-    wrapper.appendChild(element);
+    wrapper.append(element);
   }
 }
 
